@@ -1,0 +1,5 @@
+wazo-python-marshmallow-packaging (3.10.0-1~wazo1) wazo-dev-buster; urgency=medium
+
+  * Initial release.
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Tue, 25 Jan 2022 11:47:27 -0500
