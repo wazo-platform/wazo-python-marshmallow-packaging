@@ -19,11 +19,9 @@ pipeline {
     }
     stage ('Build package') {
       steps {
-        build job: 'build-package', parameters: [
+        build job: 'build-package-no-arch', parameters: [
           string(name: 'PACKAGE', value: "${JOB_NAME}"),
-          string(name: 'FORCED_VERSION', value: "${version}"),
-          string(name: 'DEBIAN_REPOSITORY', value: 'wazo-official'),
-          string(name: 'DEBIAN_DISTRIBUTION', value: 'wazo-dev-buster'),
+          string(name: 'VERSION', value: "${version}"),
         ]
       }
     }
